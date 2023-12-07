@@ -1,0 +1,15 @@
+@import url(./variable.css);
+@import url(./reset.css);
+
+header, nav {
+     background: var(--rich-black-fogra-29);
+}
+.navbar{
+     padding:  0 var(--px);
+}
+
+
+/*Container style*/
+.container{
+     
+}

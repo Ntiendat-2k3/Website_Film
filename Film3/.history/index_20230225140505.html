@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="./css/main.css">
+     <link rel="stylesheet" href="./css/media_query.css">
+</head>
+<body>
+     <!-- main container  -->
+     <div class="container">
+          <!-- header  -->
+          <header>
+               <div class="navbar">
+
+                    <button class="navbar-menu-btn">
+                         <span></span><span></span><span></span>
+                    </button>
+
+                    <a href="#" class="navbar-brand">
+                         <img src="./images/logo.png" alt="">
+                    </a>
+
+                    <nav>
+                         <ul class="navbar-nav">
+                              <li><a href="#" class="navbar-link">Home</a></li>
+                              <li><a href="#category" class="navbar-link">Category</a></li>
+                              <li><a href="#live" class="navbar-link indicator">LIVE</a></li>
+                         </ul>
+                    </nav>
+
+                    <div class="navbar-actions">
+                         <form action="#" class="navbar-form">
+                              <input type="text" name="search" placeholder="I'm looking for ..." class="navbar-form-search">
+
+                              <button class="navbar-form-btn">
+                                   <ion-icon name="search-outline"></ion-icon>
+                              </button>
+
+                              <button class="navbar-form-close">
+                                   <ion-icon name="close-circle-outline"></ion-icon>
+                              </button>
+                         </form>
+
+                         <div class="navbar-search-btn">
+                              <ion-icon name="search-outline"></ion-icon>
+                         </div>
+
+                         <a href="#" class="navbar-signin">
+                              <span>Sign In</span>
+                              <ion-icon name="log-in-outline"></ion-icon>
+                         </a>
+                    </div>
+               </div>
+          </header>
+
+          <main>
+               <!-- Banner  -->
+               <section class="banner">
+                    <div class="banner-card">
+                         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3b4e6c2c-eb1b-4136-84d0-a78d00aa9c67/dfq6xlf-4f4cfb1a-9071-4c60-a8ce-a6e9a08494f8.png/v1/fill/w_1000,h_800,q_70,strp/tatsumaki_by_fibrizzo29_dfq6xlf-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzNiNGU2YzJjLWViMWItNDEzNi04NGQwLWE3OGQwMGFhOWM2N1wvZGZxNnhsZi00ZjRjZmIxYS05MDcxLTRjNjAtYThjZS1hNmU5YTA4NDk0ZjgucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.s8ISFN0nBNVR3oZx0MDAJJAPWz0jD4rRNjRlnOqw3GI" alt="" class="banner-img">
+                         <div class="card-content">
+                              <div class="card-info">
+
+                                   <div class="genre">
+                                        <ion-icon name="film-outline"></ion-icon>
+                                        <span>Action/Thriller</span>
+                                   </div>
+
+                                   <div class="year">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+                                        <span>2023</span>
+                                   </div>
+
+                                   <div class="duration">
+                                        <ion-icon name="hourglass-outline"></ion-icon>
+                                        <span>2h 11m</span>
+                                   </div>
+
+                                   <div class="quality">4K</div>
+                              </div>
+
+                              <h2 class="card-title">
+                                   abc
+                              </h2>
+                         </div>
+                    </div>
+               </section>
+
+               <!-- Movies -->
+               <section class="movies">
+
+                    <!-- filter bar  -->
+                    <div class="filter-bar">
+                         <div class="filter-dropdowns">
+
+                              <select name="genre" class="genre">
+                                   <option value="all genres">All genres</option>
+                                   <option value="action">Action</option>
+                                   <option value="advanture">Advanture</option>
+                                   <option value="animal">Animal</option>
+                                   <option value="animation">Animation</option>
+                                   <option value="biography">Biography</option>
+                              </select>
+
+                              <select name="year" class="year">
+                                   <option value="all years">All the years</option>
+                                   <option value="2022">2022</option>
+                                   <option value="2021-2022">2021-2022</option>
+                                   <option value="2023">2023</option>
+                                   <option value="2018-2019">2018-2019</option>
+                                   <option value="2010">2010</option>
+                              </select>
+
+                         </div>
+                         <div class="filter-radios">
+                              <input type="radio" name="grade" id="featured" checked>
+                              <label for="featured">Featured</label>
+
+                              <input type="radio" name="grade" id="popular">
+                              <label for="popular">Popular</label>
+
+                              <input type="radio" name="grade" id="newest">
+                              <label for="newest">Newest</label>
+
+                              <div class="checked-radio-bg"></div>
+                         </div>
+                    </div>
+
+                    <div class="movies-grid">
+                         
+                    </div>
+               </section>
+          </main>
+
+     </div>
+
+     <script src="./js/main.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

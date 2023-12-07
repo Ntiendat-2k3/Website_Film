@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="./css/main.css">
+     <link rel="stylesheet" href="./css/media_query.css">
+</head>
+<body>
+     <!-- main container  -->
+     <div class="container">
+          <!-- header  -->
+          <header>
+               <div class="navbar">
+
+                    <button class="navbar-menu-btn">
+                         <span></span><span></span><span></span>
+                    </button>
+
+                    <a href="#" class="navbar-brand">
+                         <img src="./images/logo.png" alt="">
+                    </a>
+
+                    <nav>
+                         <ul class="navbar-nav">
+                              <li><a href="#" class="navbar-link">Home</a></li>
+                              <li><a href="#category" class="navbar-link">Category</a></li>
+                              <li><a href="#live" class="navbar-link indicator">LIVE</a></li>
+                         </ul>
+                    </nav>
+
+                    <div class="navbar-actions">
+                         <form action="#" class="navbar-form">
+                              <input type="text" name="search" placeholder="I'm looking for ..." class="navbar-form-search">
+
+                              <button class="navbar-form-btn">
+                                   <ion-icon name="search-outline"></ion-icon>
+                              </button>
+
+                              <button class="navbar-form-close">
+                                   <ion-icon name="close-circle-outline"></ion-icon>
+                              </button>
+                         </form>
+
+                         <div class="navbar-search-btn">
+                              <ion-icon name="search-outline"></ion-icon>
+                         </div>
+
+                         <a href="#" class="navbar-signin">
+                              <span>Sign In</span>
+                              <ion-icon name="log-in-outline"></ion-icon>
+                         </a>
+                    </div>
+               </div>
+          </header>
+
+          <main>
+
+               <!-- Banner  -->
+               <section class="banner">
+                    <div class="banner-card">
+                         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3b4e6c2c-eb1b-4136-84d0-a78d00aa9c67/dfq6xlf-4f4cfb1a-9071-4c60-a8ce-a6e9a08494f8.png/v1/fill/w_1000,h_800,q_70,strp/tatsumaki_by_fibrizzo29_dfq6xlf-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzNiNGU2YzJjLWViMWItNDEzNi04NGQwLWE3OGQwMGFhOWM2N1wvZGZxNnhsZi00ZjRjZmIxYS05MDcxLTRjNjAtYThjZS1hNmU5YTA4NDk0ZjgucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.s8ISFN0nBNVR3oZx0MDAJJAPWz0jD4rRNjRlnOqw3GI" alt="" class="banner-img">
+                         <div class="card-content">
+                              <div class="card-info">
+
+                                   <div class="genre">
+                                        <ion-icon name="film-outline"></ion-icon>
+                                        <span>Action/Thriller</span>
+                                   </div>
+
+                                   <div class="year">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+                                        <span>2023</span>
+                                   </div>
+
+                                   <div class="duration">
+                                        <ion-icon name="hourglass-outline"></ion-icon>
+                                        <span>2h 11m</span>
+                                   </div>
+
+                                   <div class="quality">4K</div>
+                              </div>
+
+                              <h2 class="card-title">
+                                   abc
+                              </h2>
+                         </div>
+                    </div>
+               </section>
+
+               <!-- Movies -->
+               <section class="movies">
+
+                    <!-- filter bar  -->
+                    <div class="filter-bar">
+                         <div class="filter-dropdowns">
+
+                              <select name="genre" class="genre">
+                                   <option value="all genres">All genres</option>
+                                   <option value="action">Action</option>
+                                   <option value="advanture">Advanture</option>
+                                   <option value="animal">Animal</option>
+                                   <option value="animation">Animation</option>
+                                   <option value="biography">Biography</option>
+                              </select>
+
+                              <select name="year" class="year">
+                                   <option value="all years">All the years</option>
+                                   <option value="2022">2022</option>
+                                   <option value="2021-2022">2021-2022</option>
+                                   <option value="2023">2023</option>
+                                   <option value="2018-2019">2018-2019</option>
+                                   <option value="2010">2010</option>
+                              </select>
+
+                         </div>
+                         <div class="filter-radios">
+                              <input type="radio" name="grade" id="featured" checked>
+                              <label for="featured">Featured</label>
+
+                              <input type="radio" name="grade" id="popular">
+                              <label for="popular">Popular</label>
+
+                              <input type="radio" name="grade" id="newest">
+                              <label for="newest">Newest</label>
+
+                              <div class="checked-radio-bg"></div>
+                         </div>
+                    </div>
+
+                    <!-- Movie- grid  -->
+                    <div class="movies-grid">
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmx0z6-b66c1f32-638e-4e0e-9a14-9a2c8804fe0c.png/v1/fill/w_1095,h_730,q_70,strp/6_by_slayenx_dfmx0z6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjlhODBiZWMtMjJiOC00MmYyLTkwZmYtNjAwMDllN2VmZTMwXC9kZm14MHo2LWI2NmMxZjMyLTYzOGUtNGUwZS05YTE0LTlhMmM4ODA0ZmUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SPYBOULeDwkcY7BfZepWIm0I6UA9UufkWyKxdJEgaBQ" alt="" class="card-img">
+                                   <div class="card-overlay">
+                                        <div class="bookmark">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                        </div>
+                                        <div class="rating">
+                                             <ion-icon name="star-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="play">
+                                             <ion-icon name="play-circle-outline"></ion-icon>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <h3 class="card-title">Red Notice</h3>
+                                   <div class="card-info">
+                                        <span class="genre">Action/Comedy</span>
+                                        <span class="year">2022</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- Load mor button  -->
+                    <button class="load-more">LOAD MORE</button>
+               </section>
+
+               <!-- Category  section-->
+               <section class="category" id="category">
+                    <h2 class="section-heading">Category</h2>
+                    <div class="category-grid">
+
+                         <div class="category-card">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmy3jv-230ec227-f8d1-4dfe-9191-cc6107d32c19.png/v1/fill/w_1095,h_730,q_70,strp/neon_pyro_by_slayenx_dfmy3jv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZteTNqdi0yMzBlYzIyNy1mOGQxLTRkZmUtOTE5MS1jYzYxMDdkMzJjMTkucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.e_g2yOnw1e_txtalgS6U72IqYLgsNjbkwrQvMYh7B6E" alt="" class="card-img">
+                              <div class="name">Action</div>
+                              <div class="total">100</div>
+                         </div>
+                         <div class="category-card">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmy3jv-230ec227-f8d1-4dfe-9191-cc6107d32c19.png/v1/fill/w_1095,h_730,q_70,strp/neon_pyro_by_slayenx_dfmy3jv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZteTNqdi0yMzBlYzIyNy1mOGQxLTRkZmUtOTE5MS1jYzYxMDdkMzJjMTkucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.e_g2yOnw1e_txtalgS6U72IqYLgsNjbkwrQvMYh7B6E" alt="" class="card-img">
+                              <div class="name">Action</div>
+                              <div class="total">100</div>
+                         </div>
+
+                         <div class="category-card">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmy3jv-230ec227-f8d1-4dfe-9191-cc6107d32c19.png/v1/fill/w_1095,h_730,q_70,strp/neon_pyro_by_slayenx_dfmy3jv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZteTNqdi0yMzBlYzIyNy1mOGQxLTRkZmUtOTE5MS1jYzYxMDdkMzJjMTkucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.e_g2yOnw1e_txtalgS6U72IqYLgsNjbkwrQvMYh7B6E" alt="" class="card-img">
+                              <div class="name">Action</div>
+                              <div class="total">100</div>
+                         </div>
+                         
+                         <div class="category-card">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmy3jv-230ec227-f8d1-4dfe-9191-cc6107d32c19.png/v1/fill/w_1095,h_730,q_70,strp/neon_pyro_by_slayenx_dfmy3jv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZteTNqdi0yMzBlYzIyNy1mOGQxLTRkZmUtOTE5MS1jYzYxMDdkMzJjMTkucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.e_g2yOnw1e_txtalgS6U72IqYLgsNjbkwrQvMYh7B6E" alt="" class="card-img">
+                              <div class="name">Action</div>
+                              <div class="total">100</div>
+                         </div>
+                         <div class="category-card">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmy3jv-230ec227-f8d1-4dfe-9191-cc6107d32c19.png/v1/fill/w_1095,h_730,q_70,strp/neon_pyro_by_slayenx_dfmy3jv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZteTNqdi0yMzBlYzIyNy1mOGQxLTRkZmUtOTE5MS1jYzYxMDdkMzJjMTkucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.e_g2yOnw1e_txtalgS6U72IqYLgsNjbkwrQvMYh7B6E" alt="" class="card-img">
+                              <div class="name">Action</div>
+                              <div class="total">100</div>
+                         </div>
+                         <div class="category-card">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmy3jv-230ec227-f8d1-4dfe-9191-cc6107d32c19.png/v1/fill/w_1095,h_730,q_70,strp/neon_pyro_by_slayenx_dfmy3jv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZteTNqdi0yMzBlYzIyNy1mOGQxLTRkZmUtOTE5MS1jYzYxMDdkMzJjMTkucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.e_g2yOnw1e_txtalgS6U72IqYLgsNjbkwrQvMYh7B6E" alt="" class="card-img">
+                              <div class="name">Action</div>
+                              <div class="total">100</div>
+                         </div>
+
+                         <div class="category-card">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmy3jv-230ec227-f8d1-4dfe-9191-cc6107d32c19.png/v1/fill/w_1095,h_730,q_70,strp/neon_pyro_by_slayenx_dfmy3jv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZteTNqdi0yMzBlYzIyNy1mOGQxLTRkZmUtOTE5MS1jYzYxMDdkMzJjMTkucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.e_g2yOnw1e_txtalgS6U72IqYLgsNjbkwrQvMYh7B6E" alt="" class="card-img">
+                              <div class="name">Action</div>
+                              <div class="total">100</div>
+                         </div>
+                         
+                         <div class="category-card">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfmy3jv-230ec227-f8d1-4dfe-9191-cc6107d32c19.png/v1/fill/w_1095,h_730,q_70,strp/neon_pyro_by_slayenx_dfmy3jv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZteTNqdi0yMzBlYzIyNy1mOGQxLTRkZmUtOTE5MS1jYzYxMDdkMzJjMTkucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.e_g2yOnw1e_txtalgS6U72IqYLgsNjbkwrQvMYh7B6E" alt="" class="card-img">
+                              <div class="name">Action</div>
+                              <div class="total">100</div>
+                         </div>
+
+                    </div>
+               </section>
+
+               <!-- Live section  -->
+               <section class="live" id="live">
+                    <h2 class="section-heading">Live TV Shows</h2>
+                    <div class="live-grid">
+
+                         <div class="live-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfpe2dz-29194f48-266f-4888-9b66-e41c0ab6d4fe.png/v1/fill/w_1095,h_730,q_70,strp/starry_smile_by_slayenx_dfpe2dz-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZwZTJkei0yOTE5NGY0OC0yNjZmLTQ4ODgtOWI2Ni1lNDFjMGFiNmQ0ZmUucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.zzSHxnix4_I70iuHQ0hnuuPsMTny3BVMxEoO5JFsxVs" alt="" class="card-img">
+                                   <div class="live-badge">LIVE</div>
+                                   <div class="total-viewers">305k viewers</div>
+                                   <div class="play">
+                                        <ion-icon name="play-circle-outline"></ion-icon>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <img src="https://i.pinimg.com/564x/ee/65/cf/ee65cfde63b730e4ecab0b6a899f65c7.jpg" alt="" class="avatar">
+                                   <h3 class="card-title">Planet Earth II <br> Season 1 - Islands</h3>
+                              </div>
+                         </div>
+
+                         <div class="live-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfpe2dz-29194f48-266f-4888-9b66-e41c0ab6d4fe.png/v1/fill/w_1095,h_730,q_70,strp/starry_smile_by_slayenx_dfpe2dz-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZwZTJkei0yOTE5NGY0OC0yNjZmLTQ4ODgtOWI2Ni1lNDFjMGFiNmQ0ZmUucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.zzSHxnix4_I70iuHQ0hnuuPsMTny3BVMxEoO5JFsxVs" alt="" class="card-img">
+                                   <div class="live-badge">LIVE</div>
+                                   <div class="total-viewers">305k viewers</div>
+                                   <div class="play">
+                                        <ion-icon name="play-circle-outline"></ion-icon>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <img src="https://i.pinimg.com/564x/ee/65/cf/ee65cfde63b730e4ecab0b6a899f65c7.jpg" alt="" class="avatar">
+                                   <h3 class="card-title">Planet Earth II <br> Season 1 - Islands</h3>
+                              </div>
+                         </div>
+
+                         <div class="live-card">
+                              <div class="card-head">
+                                   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a80bec-22b8-42f2-90ff-60009e7efe30/dfpe2dz-29194f48-266f-4888-9b66-e41c0ab6d4fe.png/v1/fill/w_1095,h_730,q_70,strp/starry_smile_by_slayenx_dfpe2dz-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5YTgwYmVjLTIyYjgtNDJmMi05MGZmLTYwMDA5ZTdlZmUzMFwvZGZwZTJkei0yOTE5NGY0OC0yNjZmLTQ4ODgtOWI2Ni1lNDFjMGFiNmQ0ZmUucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9mOWE4MGJlYy0yMmI4LTQyZjItOTBmZi02MDAwOWU3ZWZlMzBcL3NsYXllbngtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.zzSHxnix4_I70iuHQ0hnuuPsMTny3BVMxEoO5JFsxVs" alt="" class="card-img">
+                                   <div class="live-badge">LIVE</div>
+                                   <div class="total-viewers">305k viewers</div>
+                                   <div class="play">
+                                        <ion-icon name="play-circle-outline"></ion-icon>
+                                   </div>
+                              </div>
+                              <div class="card-body">
+                                   <img src="https://i.pinimg.com/564x/ee/65/cf/ee65cfde63b730e4ecab0b6a899f65c7.jpg" alt="" class="avatar">
+                                   <h3 class="card-title">Planet Earth II <br> Season 1 - Islands</h3>
+                              </div>
+                         </div>
+
+                    </div>
+               </section>
+
+          </main>
+
+          <footer>
+               <div class="footer-content">
+                    <div class="footer-brand">
+                         <img src="" alt="" class="footer-logo">
+                         <p class="slogan">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+                         <div class="social-link">
+                              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                              <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                              <a href="#"><ion-icon name="infinite-outline"></ion-icon></a>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+     </div>
+
+     <script src="./js/main.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
